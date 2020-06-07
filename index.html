@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Project 6.10</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/nav-style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="print" href="print.css">
+</head>
+
+
+<body>
+    <a href="#main" class="skip">Skip to main</a>
+    <header id="header" class="header">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i id="symbol-toggle" class="fas fa-bars"></i>
+            </span>
+            <a href="#header" class="logo">
+                <div class="logo-container">
+                    <img class="logo" src="images/logo-1913689.svg" alt="Company Logo">
+                    <h1 class="page-title">Portfolio Page</h1>
+                </div>
+            </a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="#main" class="nav-links">Main</a>
+                </li>
+                <li>
+                    <a href="#about-me" class="nav-links">About Me</a>
+                </li>
+                <li>
+                    <a href="#pictures" class="nav-links">My Photos</a>
+                </li>
+                <li>
+                    <a href="#story" class="nav-links">A Story</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-links">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end of header -->
+    <!-- start of main content -->
+    
+    <main id="main" tabindex="-1" class="main">
+
+        <!-- start of bio section -->
+
+        <!--<div class="content">-->
+        <!--  <img class="logo main-col" src="images/logo-1913689.svg" alt="Company Logo">
+                <div class="page-title">Web Dev I</div>-->
+
+
+        <section class="hero">
+            <div class="content">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/Universal-lrg.jpg">
+                    <source media="(min-width: 960px)" srcset="images/Universal-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/Universal-small.jpg">
+                    <img class="my-picture" src="images/Universal-xsmall.jpg" alt="This is a picture of me">
+                </picture>
+                <p class="my-name">Timothy J. Mahoney</p>
+                <p class="my-location">Middlesex, NJ</p>
+            </div>
+        </section>
+
+        <section id="about-me" class="about-me">
+            <div class="about-content">
+                <p class="My Bio">My Bio</p>
+                <p class="my-info">I'd like to spend some time working at a small start up and help them build their brand name through a well designed site then move on to large company to manage a team of developers where we work with cutting edge tech.
+
+                    I have worked with computers for over 20 years in hardware testing, system building, sales, & quality assurance.
+
+                    Most recently I've been a chef at high end, farm-to-table restaurants and have worked in corporate events planning menus for executive parties. After returning to college I am working towards a degree in computer programming so that I can return to the tech industry.</p>
+            </div>
+        </section>
+        <!-- end of bio section -->
+        <!-- start of photo gallery -->
+        <section id="pictures" class="gallery">
+            <br class="mobile-first">
+            <figure class="figure1">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/butterfly-lrg.jpg">
+                    <source media="(min-width: 960px)" srcset="images/butterfly-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/butterfly-small.jpg">
+                    <img class="picture" src="images/butterfly-xsmall.jpg" alt="Finn and a butterfly">
+                </picture>
+                <figcaption class="Finn">Finn catching a butterfly</figcaption>
+            </figure>
+            <hr class="mobile-first">
+            <figure class="figure2">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/shades-lrg.jpg">
+                    <source media="(min-width: 960px)" srcset="images/shades-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/shades-small.jpg">
+                    <img class="picture" src="images/shades-xsmall.jpg" alt="Finn in cool sunglasses">
+                </picture>
+                <figcaption class="Finn">Finn looking cool in new shades</figcaption>
+            </figure>
+            <hr class="mobile-first">
+            <figure class="figure3">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/camo-lrg.jpg">
+                    <source media="(min-width: 960px)" srcset="images/camo-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/camo-small.jpg">
+                    <img class="picture" src="images/camo-xsmall.jpg" alt="Finn readying for a nerf war">
+                </picture>
+                <figcaption class="Finn">Finn getting ready for his nerf war b-day party</figcaption>
+            </figure>
+            <br class="mobile-first">
+        </section>
+        <!-- end of photo gallery -->
+        <hr class="mobile-first">
+        
+
+                   
+    </main>
+    <!-- end of main content -->
+    <!-- start of contact form -->
+
+    <section id="contact" class="form-container">
+        <a href="https://www.linkedin.com/in/timothymahoney85bb4b173">LinkedIn</a>
+        <a href="https://github.com/Timmahoney2000">Github</a>
+        <br>
+        <h1>Contact Info</h1>
+        <form class="contact" method="POST" action="https://formspree.io/G00280483@stu.raritanval.edu">
+            <fieldset>
+                <legend>Email</legend>
+                <input type="email" name="email">
+                <br>
+                <label for="message">Message</label>
+                <br>
+                <textarea name="message" id="message"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Reply</legend>
+                <input type="radio" name="yes-no" value="Yes" checked> Yes<br>
+                <input type="radio" name=yes-no value="No"> No<br>
+            </fieldset>
+            <br>
+            <br>
+            <button type="submit">Send<br></button>
+        </form>
+    </section>
+    <!-- end of contact form -->
+    <!-- start of footer -->
+    <footer>
+        <br class="mobile-first"><br class="mobile-first">
+        <p>Timothy J. Mahoney &#169;</p>
+    </footer>
+    <div class="back-to-top">
+        <a href="#">Back To Top</a>
+    </div>
+    <!-- end of footer -->
+    <br class="mobile-first"><br class="mobile-first">
+    <!-- start of javascript for nav toggle -->
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+        let symbolToggle = document.getElementById('symbol-toggle');
+
+        navBarToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            if (symbolToggle.classList.contains('fa-bars')) {
+                symbolToggle.classList.remove('fa-bars');
+                symbolToggle.classList.add('fa-times');
+            } else {
+                symbolToggle.classList.remove('fa-times');
+                symbolToggle.classList.add('fa-bars');
+            }
+        });
+
+    </script>
+    <!-- end of javascript for nav toggle -->
+
+
+
+
+</body>
+
+</html>
